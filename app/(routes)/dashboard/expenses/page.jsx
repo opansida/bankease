@@ -19,7 +19,7 @@ function ExpensesScreen() {
    */
   const getAllExpenses = async () => {
     const result = await db.select({
-      id: Expense.id,    // 确保这里使用了正确的模型
+      id: Expense.id,   
       name: Expense.name,
       amount: Expense.amount,
       createdAt: Expense.createdAt
@@ -37,7 +37,7 @@ function ExpensesScreen() {
       <h2 className='font-bold text-3xl'>My Expenses</h2>
 
       <ExpenseListTable 
-        refreshData={() => getAllExpenses()}  // 刷新数据
+        refreshData={() => getAllExpenses()}  
         expensesList={expensesList}
       />
     </div>

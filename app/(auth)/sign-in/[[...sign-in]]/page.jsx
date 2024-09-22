@@ -2,12 +2,12 @@ import { SignIn } from '@clerk/nextjs';
 
 export default function Page() {
   return (
-    <section className="bg-gray-200">
+    <section className="bg-primary">
       <div className="lg:grid lg:min-h-screen lg:grid-cols-12">
-        <section className="relative flex h-32 items-end bg-gray-900 lg:col-span-5 lg:h-full xl:col-span-6">
+        <section className="relative flex h-32 items-end bg-white lg:col-span-5 lg:h-full xl:col-span-6">
           <img
             alt=""
-            src="/dashboard.png"
+            src="/signin.png"
             className="absolute inset-0 h-full w-full object-cover opacity-80"
           />
           <div className="hidden lg:relative lg:block lg:p-12">

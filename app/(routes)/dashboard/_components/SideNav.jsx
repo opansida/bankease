@@ -2,7 +2,7 @@
 
 import React, { useEffect } from 'react';
 import Image from 'next/image';
-import { LayoutGrid, PiggyBank, Receipt, ShieldCheck } from 'lucide-react';
+import { LayoutGrid, CircleDollarSign, Send, HandCoins } from 'lucide-react';
 import { UserButton } from '@clerk/nextjs';
 import { usePathname, useRouter } from 'next/navigation'; 
 
@@ -12,9 +12,9 @@ function SideNav() {
 
   const menuList = [
     { id: 1, name: 'Dashboard', icon: LayoutGrid, path: '/dashboard' },
-    { id: 2, name: 'Budgets', icon: PiggyBank, path: '/dashboard/budgets' },
-    { id: 3, name: 'Expenses', icon: Receipt, path: '/dashboard/expenses' },
-    { id: 4, name: 'Upgrade', icon: ShieldCheck, path: '/dashboard/upgrade' }
+    { id: 2, name: 'Budgets', icon: CircleDollarSign, path: '/dashboard/budgets' },
+    { id: 3, name: 'Expenses', icon: Send, path: '/dashboard/expenses' },
+    { id: 4, name: 'Currency', icon: HandCoins, path: '/dashboard/currency_converter' }
   ];
 
   useEffect(() => {
