@@ -2,6 +2,13 @@
 
 BankEase is a modern budgeting and expense tracking application that helps users manage their finances effortlessly. With BankEase, users can create budgets, track expenses, and get real-time insights into their spending habits. Additionally, the app provides a currency conversion feature for users dealing with multiple currencies.
 
+![App Screenshot](media/main.png)
+
+## Deploy on Vercel
+
+This project is deployed on Vercel. You can access the live version of the app here: [BankEase](https://bankease.vercel.app/)
+
+
 ## Features
 
 - Create and manage budgets.
@@ -30,6 +37,33 @@ This project is built using the following technologies:
 1. Clone the repository:
    ```bash
    git clone https://github.com/username/bankease.git
+
+2. Install the dependencies::
+   ```bash
+    npm install
+
+3. Set up environment variables. Create a .env.local file in the root directory with the following:
+   ```bash
+    NEXT_PUBLIC_DATABASE_URL=<Your PostgreSQL URL>
+    CLERK_FRONTEND_API=<Your Clerk Frontend API>
+    CLERK_API_KEY=<Your Clerk API Key>
+    EXCHANGE_RATE_API_KEY=<Your Exchange Rate API Key>
+
+
+4. Run the development server:
+   ```bash
+    npm run dev
+
+The app will be available at http://localhost:3000.
+
+
+## Screenshots
+
+![App Screenshot](media/dashboard.png)
+![App Screenshot](media/budgets.png)
+![App Screenshot](media/CreateNewBudget.png)
+![App Screenshot](media/CurrencyConverter.png)
+![App Screenshot](media/LatestExpenses.png)
 
 
 
