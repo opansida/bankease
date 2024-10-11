@@ -3,7 +3,7 @@ name: Deploy to S3
 on:
   push:
     branches:
-      - main  # 你希望在哪个分支推送时触发此工作流
+      - main  
 
 jobs:
   deploy:
